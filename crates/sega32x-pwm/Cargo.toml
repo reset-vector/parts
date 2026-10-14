@@ -1,0 +1,20 @@
+[package]
+name = "rvec-sega32x-pwm"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Sega 32X's PWM sound source, at its five registers and its two pulse outputs."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "sega32x_pwm"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
+units = { package = "rvec-units", version = "1", path = "../units" }
