@@ -1,0 +1,19 @@
+[package]
+name = "rvec-namco06xx"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Namco `06xx` bus controller, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "namco06xx"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
