@@ -1,0 +1,19 @@
+[package]
+name = "rvec-mb3731"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Fujitsu MB3731 bridge audio power amplifier, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "mb3731"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+units = { package = "rvec-units", version = "1", path = "../units" }
