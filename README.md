@@ -28,4 +28,6 @@ types do not mix.
 
 The crates make no claim of accuracy against any real part.
 
+Contributions: see `CONTRIBUTING.md`.
+
 MIT licensed; see `LICENSE`.
