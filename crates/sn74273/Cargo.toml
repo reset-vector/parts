@@ -1,0 +1,19 @@
+[package]
+name = "rvec-sn74273"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Texas Instruments SN74273 octal D-type flip-flop with clear, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "sn74273"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
