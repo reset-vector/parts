@@ -1,0 +1,19 @@
+[package]
+name = "rvec-i3245"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Intel 3245 quad TTL-to-MOS driver, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "i3245"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
