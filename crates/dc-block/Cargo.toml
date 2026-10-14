@@ -1,0 +1,19 @@
+[package]
+name = "rvec-dc-block"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "A DC-blocking stage for any part's audio output, so that its DC level and its power-on step do not reach a speaker."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "dc_block"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+units = { package = "rvec-units", version = "1", path = "../units" }
