@@ -1,0 +1,19 @@
+[package]
+name = "rvec-lm377"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The National Semiconductor LM377 dual 2 W audio amplifier, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "lm377"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+units = { package = "rvec-units", version = "1", path = "../units" }
