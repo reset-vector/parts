@@ -1,0 +1,19 @@
+[package]
+name = "rvec-cg82x"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "Midway's `CG820`–`CG823`, the four customs `U0`–`U3` of the Ms. Pac-Man auxiliary board, at their pins, as one part."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "cg82x"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
