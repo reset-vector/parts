@@ -1,0 +1,19 @@
+[package]
+name = "rvec-i8255"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Intel 8255A programmable peripheral interface, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "i8255"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
