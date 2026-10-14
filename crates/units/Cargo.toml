@@ -1,0 +1,16 @@
+[package]
+name = "rvec-units"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The physical quantities the chip crates take and return, one type per unit."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "units"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
