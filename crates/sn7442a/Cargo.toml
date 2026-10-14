@@ -1,0 +1,16 @@
+[package]
+name = "rvec-sn7442a"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Texas Instruments SN7442A 4-line BCD to 10-line decimal decoder, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "sn7442a"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
