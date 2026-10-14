@@ -1,0 +1,19 @@
+[package]
+name = "rvec-lm3900"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Texas Instruments LM3900 quadruple Norton operational amplifier, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "lm3900"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+units = { package = "rvec-units", version = "1", path = "../units" }
