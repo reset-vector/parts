@@ -1,0 +1,19 @@
+[package]
+name = "rvec-i8216"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Intel 8216 four-bit parallel bi-directional bus driver, at its pins."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "i8216"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+signal = { package = "rvec-signal", version = "1", path = "../signal" }
