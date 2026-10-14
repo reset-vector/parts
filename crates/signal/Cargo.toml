@@ -1,0 +1,16 @@
+[package]
+name = "rvec-signal"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The signal words the chip crates share that are not quantities: a pin's logic level, that level where a part may leave it undetermined, four bits."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "signal"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
