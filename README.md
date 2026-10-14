@@ -14,17 +14,18 @@ speakers, headphones or hearing.
 ## Usage
 ```toml
 [dependencies]
-rvec-z80 = { git = "https://github.com/reset-vector/parts", tag = "z80-v1.0.0" }
+rvec-z80 = { git = "https://github.com/reset-vector/parts", tag = "workspace-0001" }
+rvec-ay8910 = { git = "https://github.com/reset-vector/parts", tag = "workspace-0001" }
 ```
 
 The package is `rvec-<part>` and the library keeps the part's name, so the code
-says `use z80::Z80;`. A crate's `CHANGELOG.md` lists its releases.
+says `use z80::Z80;`. A crate's `CHANGELOG.md` lists its releases, and each
+release keeps its own `<part>-v<version>` tag as a marker.
 
-A part that takes or returns a quantity does so in `rvec-units`'s types
-(`use units::Microvolts;`). Cargo builds a git dependency once per commit, so
-take every crate, `rvec-units` included, at one tag: the newest holds every
-crate's latest release, and parts taken at two tags carry two `units` whose
-types do not mix.
+Pin every `rvec` crate to the same `workspace-NNNN` tag, the newest of which
+holds every crate's latest release. Cargo builds a git dependency once per ref,
+so crates taken at two refs carry two copies of `rvec-signal` and `rvec-units`
+(`use units::Microvolts;`) whose types do not mix.
 
 The crates make no claim of accuracy against any real part.
 
