@@ -1,0 +1,19 @@
+[package]
+name = "rvec-konami-scc"
+version = "1.0.0"
+edition = "2024"
+rust-version.workspace = true
+description = "The Konami SCC — the `051649`, and the `052539` (the SCC+) beside it — at its 256-byte register block and its summed output."
+license = "MIT"
+repository = "https://github.com/reset-vector/parts"
+publish = false
+
+[lib]
+name = "konami_scc"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+units = { package = "rvec-units", version = "1", path = "../units" }
